@@ -25,11 +25,5 @@ client.on('guildMemberRemove', member => {
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', '✒-userchat');
   if (!channel) return;
-  channel.send(`:hugging: **[+] ${member.user.username}`);
-});
-
-client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', '✒-userchat');
-  if (!channel) return;
-  channel.send(`:hugging: **[-] ${member.user.username}`);
+  channel.send(`:hugging: **[+] ${member}`);
 });
