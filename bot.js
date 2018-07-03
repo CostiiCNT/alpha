@@ -6,11 +6,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("guildMemberAdd", function(member) {
-    let role = member.guild.roles.find("name","» Safe");
-    member.addRole(role).catch(console.error);
-});
-
 client.login('NDYzNzMzNTgyOTU1OTM3Nzky.Dh0tOg.hJYuJjeWQZbs8LbiaKRTYiMfMXY');
 
 client.on('guildMemberAdd', member => {
@@ -24,5 +19,5 @@ client.on('guildMemberRemove', member => {
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', '✒-userchat');
   if (!channel) return;
-  channel.send(`:hugging: **[+] ${member}`);
+  channel.send(`:hugging: ** [+] ${member} :tada: **`);
 });
