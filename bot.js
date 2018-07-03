@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = 'NDU2ODgxMjgzNDgyNzc5Njcw.Dh0L1g.6cTzyecg3K-jZ0M1PtgESqEgL8M'
+const token = 'NDYzNzMzNTgyOTU1OTM3Nzky.Dh0tOg.hJYuJjeWQZbs8LbiaKRTYiMfMXY'
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -12,7 +12,7 @@ client.on("guildMemberAdd", function(member) {
     member.addRole(role).catch(console.error);
 });
 
-client.login('NDU2ODgxMjgzNDgyNzc5Njcw.Dh0L1g.6cTzyecg3K-jZ0M1PtgESqEgL8M');
+client.login('NDYzNzMzNTgyOTU1OTM3Nzky.Dh0tOg.hJYuJjeWQZbs8LbiaKRTYiMfMXY');
 
 client.on('guildMemberAdd', member => {
     member.guild.channels.get('463695924158398464').setName(`» Member Count: ${member.guild.memberCount}`);
