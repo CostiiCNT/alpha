@@ -9,11 +9,11 @@ client.on('ready', () => {
 client.login('NDYzNzMzNTgyOTU1OTM3Nzky.Dh0tOg.hJYuJjeWQZbs8LbiaKRTYiMfMXY');
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('463695924158398464').setName(`» Member Count: ${member.guild.memberCount}`);
+    member.guild.channels.get('463736043707826176').setName(`» Member Count: ${member.guild.memberCount}`);
 });
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('463695924158398464').setName(`» Member Count: ${member.guild.memberCount}`);
+    member.guild.channels.get('463736043707826176').setName(`» Member Count: ${member.guild.memberCount}`);
 });
 
 client.on('guildMemberAdd', member => {
